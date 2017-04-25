@@ -1,0 +1,359 @@
+a
+{
+	text-decoration: none;
+	color: #f9631e;
+}
+
+a:hover
+{
+	text-decoration: none;
+	color: #f9631e;
+}
+
+a:visited
+{
+	text-decoration: none;
+	color: #f9631e;
+}
+
+.ad
+{
+	position: relative;
+	width: 970px;
+	height: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	background-color: #eeeeee;
+	border-radius: 10px;
+}
+
+body
+{
+	margin: 0px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/background.png);
+	background-repeat: repeat;
+}
+
+.buttonContainer
+{
+	position: relative;
+	width: 1024px;
+	overflow: auto;
+	margin-bottom: 60px;
+	clear: left;
+}
+
+.buttonCSS
+{
+	position: relative;
+	width: 120px;
+	height: 40px;
+	margin-right: 10px;
+	float: left;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/buttonCSS.png);
+	border-radius: 10px;
+}
+
+.buttonHTML
+{
+	position: relative;
+	width: 120px;
+	height: 40px;
+	margin-right: 10px;
+	float: left;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/buttonHTML.png);
+	border-radius: 10px;
+}
+
+.buttonJavascript
+{
+	position: relative;
+	width: 120px;
+	height: 40px;
+	margin-right: 10px;
+	float: left;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/buttonJavascript.png);
+	border-radius: 10px;
+}
+
+.center
+{
+	width: 1024px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	background-color:#ffffff;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+}
+
+.code /*full width 1024px*/
+{
+	position: relative;
+	width: 984px;
+	background-color: #eeeeee;
+	margin-bottom: 20px;
+	padding: 20px;
+	overflow: auto;
+	clear: left;
+	border-radius: 10px;
+}
+
+.codeIndent1
+{
+	position: relative;
+	left: 40px;
+	width: 964px;
+}
+
+.codeIndent2
+{
+	position: relative;
+	left: 40px;
+	width: 924px;
+}
+
+.codeText
+{
+	color: #000000;
+	font-size: 13px;
+	text-align: left;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.code2 /*half width 502px on right column*/
+{
+	position: relative;
+	width: 462px;
+	background-color: #eeeeee;
+	margin-bottom: 20px;
+	padding: 20px;
+	overflow: auto;
+	border-radius: 10px;
+}
+
+.code3 /*half width 502px on left column*/
+{
+	position: relative;
+	width: 462px;
+	background-color: #eeeeee;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	overflow: auto;
+	float: left;
+	border-radius: 10px;
+}
+
+.code2Indent1
+{
+	position: relative;
+	left: 40px;
+	width: 422px;
+}
+
+.code2Indent2
+{
+	position: relative;
+	left: 40px;
+	width: 382px;
+}
+
+.explanation
+{
+	position: relative;
+	width: 1024px;
+	margin-bottom: 16px;
+	overflow: auto;
+	clear: left;
+}
+
+.explanation2
+{
+	position: relative;
+	width: 462px;
+	margin-left:20px;
+	margin-bottom: 16px;
+	overflow: auto;
+}
+
+.explanationText
+{
+	color: #333333;
+	font-size: 14px;
+	text-align: left;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+}
+
+@font-face
+{
+	font-family: 'frankfurter-medium-plain';
+    src: url('http://www.rleonardi.com/tutorial/design-portfolio/font/frankfurter-medium-plain.eot');
+    src: url('../font/frankfurter-medium-plain.eot') format('embedded-opentype'),
+         url('../font/frankfurter-medium-plain.woff') format('woff'),
+         url('../font/frankfurter-medium-plain.ttf') format('truetype'),
+         url('../font/frankfurter-medium-plain.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'frankfurter-plain';
+    src: url('http://www.rleonardi.com/tutorial/design-portfolio/font/frankfurter-plain.eot');
+    src: url('../font/frankfurter-plain.eot') format('embedded-opentype'),
+         url('../font/frankfurter-plain.woff') format('woff'),
+         url('../font/frankfurter-plain.ttf') format('truetype'),
+         url('../font/frankfurter-plain.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#image-1-1
+{
+	position: relative;
+	width: 502px;
+	height: 335px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/image-1-1.jpg);
+	margin-right: 20px;
+	margin-bottom: 5px;
+	float: left;
+	border-radius: 10px;
+}
+
+#image-2-1
+{
+	position: relative;
+	width: 1024px;
+	height: 333px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/image-2-1.jpg);
+	margin-bottom: 5px;
+	border-radius: 10px;
+}
+
+#image-2-2
+{
+	position: relative;
+	width: 502px;
+	height: 817px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/image-2-2.jpg);
+	float: left;
+	margin-bottom: 5px;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+
+#image-2-3
+{
+	position: relative;
+	width: 502px;
+	height: 335px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/image-2-3.jpg);
+	float: left;
+	margin-bottom: 5px;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+
+#image-3-1
+{
+	position: relative;
+	width: 1024px;
+	height: 230px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/image-3-1.jpg);
+	overflow: auto;
+	margin-bottom: 5px;
+	border-radius: 10px;
+}
+
+#image-3-2
+{
+	position: relative;
+	width: 1024px;
+	height: 437px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/image-3-2.jpg);
+	float: left;
+	margin-bottom: 5px;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+
+#image-3-3
+{
+	position: relative;
+	width: 502px;
+	height: 817px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/image-3-3.jpg);
+	float: left;
+	margin-bottom: 5px;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+
+.imageText
+{
+	color: #333333;
+	font-size: 12px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.imageTextContainer
+{
+	position: relative;
+	width: 1024px;
+	margin-bottom: 20px;
+	overflow: auto;
+	clear: left;
+}
+
+img
+{ 
+	border-style: none;
+}
+
+.dividerLine
+{
+	position: relative;
+	width: 1024px;
+	height: 1px;
+	background-color: #888888;
+	margin-bottom: 120px;
+}
+
+.title
+{
+	position: relative;
+	width: 1024px;
+	margin-bottom: 40px;
+}
+
+.titleText
+{
+	color: #00aeef;
+	font-size: 40px;
+	text-align: left;
+	font-family: frankfurter-medium-plain;
+	
+}
+
+.titleTextBig
+{
+	color: #00aeef;
+	font-size: 70px;
+	text-align: left;
+	font-family: frankfurter-plain;
+}
+
+#topArea
+{
+	position: relative;
+	width: 100%;
+	margin-bottom: 40px;
+	overflow: auto;
+}

@@ -1,0 +1,15 @@
+/*for parallax effect*/
+/*body
+{
+	background-image: url(../images/background.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	margin:0px;
+}*/
+
+body
+{
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/background.png);
+	background-repeat: repeat;
+	margin:0px;
+}

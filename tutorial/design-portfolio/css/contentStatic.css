@@ -1,0 +1,150 @@
+#contentThumbnailPaper
+{
+	position:relative;
+	width: 1024px;
+	overflow: hidden;
+	margin-bottom: 40px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/background.png);
+	background-repeat: repeat;
+	padding-top:80px;
+	padding-bottom:40px;
+	border-radius: 10px;
+}
+
+#designArea1
+{
+	position:absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#blockDesignArea1
+{
+	position:absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#designContainer1
+{
+	position:relative;
+	overflow: hidden;
+}
+
+#frame1
+{
+	position:absolute;
+	background-color: #ffffff;
+	
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.stringGear
+{
+	position: absolute;
+	height: 2px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/stringThumbnail.png);
+	background-repeat:repeat-x;
+}
+
+.thumbnailPaper
+{
+	position: relative;
+	width: 186px;
+	height: 263px;
+	margin-right: 19px;
+	float: left;
+}
+
+.thumbnailPaper img
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.thumbnailPaperCaption
+{
+	position: absolute;
+	left: 0px;
+	top: -160px;
+	width: 160px;
+	height: 160px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/thumbnailCaptionBack.jpg);
+}
+
+.thumbnailPaperCaption span
+{
+	color: #ffffff;
+	font-size: 17px;
+	font-weight: 700;
+	text-align: left;
+	margin: 24px;
+	float: left;
+	font-family: arial;
+}
+
+.thumbnailPaperCaptionArea
+{
+	position: absolute;
+	left: 13px;
+	top: 56px;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+}
+
+.thumbnailPaperCaption span em
+{
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.thumbnailPaperContainer
+{
+	position: relative;
+	width: 1006px;
+	height: 263px;
+	margin-bottom: 40px;
+	top: 0px;
+}
+
+.thumbnailPaperImage
+{
+	position: absolute;
+	left: 13px;
+	top: 56px;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+}
+
+.thumbnailPaperNoMargin
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	position: relative;
+	width: 186px;
+	height: 263px;
+	float: left;
+}
+
+.thumbnailPaperNoMargin img
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#titleStatic
+{
+	position:relative;
+	width: 146px;
+	height: 39px;
+	margin-bottom: 40px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/titleStatic.png);
+}

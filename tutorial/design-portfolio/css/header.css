@@ -1,0 +1,309 @@
+a
+{
+	text-decoration: none;
+}
+
+#bird
+{
+	position:absolute;
+	width: 297px;
+	height: 281px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/bird.png);
+}
+
+#bush1
+{
+	position:absolute;
+	width: 354px;
+	height: 298px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/bush.png);
+}
+
+#bush2
+{
+	position:absolute;
+	width: 354px;
+	height: 298px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/bush.png);
+}
+
+#cloudBack
+{
+	position:absolute;
+	width: 3920px;
+	height: 350px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/cloudBack.png);
+	background-repeat:repeat-x;
+}
+
+#cloudFront
+{
+	position:absolute;
+	width: 4900px;
+	height: 149px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/cloudFront.png);
+	background-repeat:repeat-x;
+}
+
+#cloudFrontBottom
+{
+	position:absolute;
+	width: 4900px;
+	height: 350px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/cloudFrontBottom.png);
+	background-repeat:repeat-x;
+}
+
+#cloudGradient
+{
+	position: absolute;
+	left: 0px;
+	top: 900px;
+	width: 100%;
+	height: 300px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/cloudGradient.png);
+	background-repeat:repeat-x;
+}
+
+#cloudTop1
+{
+	position:absolute;
+	width: 191px;
+	height: 177px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/cloudTop.png);
+}
+
+#cloudTop2
+{
+	position:absolute;
+	width: 191px;
+	height: 177px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/cloudTop.png);
+}
+
+#cloudTop3
+{
+	position:absolute;
+	width: 191px;
+	height: 177px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/cloudTop.png);
+}
+
+#header
+{
+	position: relative;
+	width: 1024px;
+	height: 750px;
+	margin-bottom: 40px;
+	overflow: hidden;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/background.png);
+	background-repeat: repeat;
+	border-radius: 10px;
+}
+
+#iconCv
+{
+	position:absolute;
+	width: 100px;
+	height: 155px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/iconCv.png);
+}
+
+#iconScrollDown
+{
+	position: absolute;
+	left: 0px;
+	top: 142px;
+	width: 140px;
+	height: 138px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/iconScrollDown.png);
+}
+
+#iconScrollDownContainer
+{
+	position:absolute;
+	width: 140px;
+	height: 280px;
+}
+
+#iconScrollDown:hover
+{
+	cursor: pointer;
+}
+
+#iconTwitter
+{
+	position:absolute;
+	width: 100px;
+	height: 155px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/iconTwitter.png);
+}
+
+img
+{ 
+	border-style: none;
+}
+
+#island
+{
+	position:absolute;
+	width: 435px;
+	height: 273px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/island.png);
+}
+
+#mushroom1
+{	
+	position:absolute;
+	width: 150px;
+	height: 163px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/mushroom1.png);
+}
+
+#mushroom2
+{
+	position:absolute;
+	width: 157px;
+	height: 171px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/mushroom2.png);
+}
+
+#mushroom3
+{
+	position:absolute;
+	width: 150px;
+	height: 168px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/mushroom3.png);
+}
+
+#navigation
+{
+	position:absolute;
+	width: 150px;
+	height: 226px;
+}
+
+p
+{
+	color: #333333;
+	font-size: 14px;
+	text-align: left;
+	float: left;
+	font-family: arial;
+}
+
+p a
+{
+	color: #C3996B;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+p a:hover
+{
+	color: #C3996B;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+p a:visited
+{
+	color: #C3996B;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+#seaweed1
+{
+	position:absolute;
+	width: 149px;
+	height: 377px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/seaweed.png);
+}
+
+#seaweed2
+{
+	position:absolute;
+	width: 149px;
+	height: 377px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/seaweed.png);
+}
+
+#snake
+{
+	position:absolute;
+	width: 534px;
+	height: 320px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/snake.png);
+}
+
+#squid
+{
+	position:absolute;
+	width: 381px;
+	height: 281px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/squid.png);
+}
+
+#textAbout
+{
+	position:absolute;
+	width: 760px;
+	height: 100px;
+}
+
+#thornBranch1
+{
+	position:absolute;
+	width: 197px;
+	height: 364px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/thornBranch.png);
+}
+
+#thornBranch2
+{
+	position:absolute;
+	width: 197px;
+	height: 364px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/thornBranch.png);
+}
+
+#thornBranch3
+{
+	position:absolute;
+	width: 197px;
+	height: 364px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/thornBranchFlip.png);
+}
+
+#titleAbout
+{
+	position:absolute;
+	width: 146px;
+	height: 39px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/titleAbout.png);
+}
+
+#treeBranch
+{
+	position:absolute;
+	width: 525px;
+	height: 295px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/treeBranch.png);
+}
+
+#treeLeavesLeft
+{
+	position:absolute;
+	width: 410px;
+	height: 47px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/treeLeavesLeft.png);
+}
+
+#treeLeavesRight
+{
+	position:absolute;
+	width: 300px;
+	height: 34px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/treeLeavesRight.png);
+}

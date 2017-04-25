@@ -1,0 +1,77 @@
+.displayNone
+{
+	display:none;
+}
+
+#javascriptStringLeft
+{
+	position: absolute;
+	left: 50%;
+	top: -50%;
+	margin-left: -97px;
+	width: 3px;
+	height: 100%;
+	background-image:url(http://www.rleonardi.com/design-portfolio/images/stringPreloaderAndJavascript.png);
+	background-repeat: repeat-y;
+	margin-top: 100px;	
+}
+
+#javascriptStringRight
+{
+	position: absolute;
+	left: 50%;
+	top: -50%;
+	margin-left: 94px;
+	width: 3px;
+	height: 100%;
+	background-image:url(http://www.rleonardi.com/design-portfolio/images/stringPreloaderAndJavascript.png);
+	background-repeat: repeat-y;
+	margin-top: 100px;	
+}
+
+#pleaseTurnOnJavascript
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 548px;
+	height: 247px;
+	margin-left: -274px;
+	margin-top: -124px;
+}
+
+#textPleaseTurnOn
+{
+	position: absolute;
+	left: 101px;
+	top: 0px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/javascriptPleaseTurnOn.png);
+	width: 347px;
+	height: 61px;
+}
+
+#textJavascript
+{
+	position: absolute;
+	left: 0px;
+	top: 66px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/javascriptJavascript.png);
+	width: 548px;
+	height: 122px;
+}
+
+#textAndThenHitRefresh
+{
+	position: absolute;
+	left: 35px;
+	top: 196px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/javascriptHitRefresh.png);
+	width: 479px;
+	height: 51px;
+}
+
+.transparent
+{
+	opacity: 0;
+	filter: alpha(opacity=0);
+}

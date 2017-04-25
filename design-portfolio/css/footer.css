@@ -1,0 +1,327 @@
+#buttonSend
+{
+	position:absolute;
+	width: 130px;
+	height: 84px;
+	left: 416px;
+	top: 373px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/buttonSend.png);
+}
+
+#buttonGoUp
+{
+	position:absolute;
+	width: 211px;
+	height: 220px;
+	top: 0px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/buttonGoUp.png);
+}
+
+#buttonGoUp:hover
+{
+	cursor: pointer;
+}
+
+#footer
+{
+	position:relative;
+	width: 100%;
+	height: 735px;
+	overflow: hidden;
+}
+
+#grass
+{
+	position:absolute;
+	width: 100%;
+	height: 120px;
+	left: 0px;
+	top: 165px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/grass.png);
+	background-repeat:repeat-x;
+}
+
+#grassCenterArea
+{
+	position:relative;
+	width: 1000px;
+	height: 100px;
+	top: -305px;
+}
+
+#ground
+{
+	position:absolute;
+	width: 100%;
+	height: 470px;
+	left: 0px;
+	top: 265px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/ground.jpg);
+	background-repeat:repeat-x;
+}
+
+#groundCenterArea
+{
+	position:relative;
+	width: 1000px;
+	height: 470px;
+	top: 265px;
+}
+
+#holeEmail
+{
+	position:absolute;
+	width: 470px;
+	height: 40px;
+	left: 100px;
+	top: 94px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/holeEmailSubject.png);
+}
+
+#holeEmail input
+{
+	font-family: Arial;
+	font-size: 14px;
+	color: #ffd68a;
+	width: 450px;
+	margin: 9px;
+	border: none;
+	background-color: transparent;
+}
+
+#holeEmail input:focus
+{
+    outline: none;
+}
+
+#holeGrass
+{
+	position:absolute;
+	width: 390px;
+	height: 102px;
+	left: 610px;
+	top: 18px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/holeGrass.png);
+}
+
+#holeMessage
+{
+	position:absolute;
+	width: 470px;
+	height: 180px;
+	left: 100px;
+	top: 210px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/holeMessage.png);
+}
+
+#holeMessage textarea
+{
+	font-family: Arial;
+	font-size: 14px;
+	color: #ffd68a;
+	width: 450px;
+	height: 150px;
+	margin: 9px;
+	border: none;
+	overflow:hidden;  /*no scroll bar*/
+	resize: none; /*hide the resize corner handle*/
+	background-color: transparent;
+}
+
+#holeMessage textarea:focus
+{
+    outline: none;
+}
+
+#holeMonkey
+{
+	position:absolute;
+	width: 390px;
+	height: 430px;
+	left: 610px;
+	top: 0px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/holeMonkey.png);
+}
+
+#holeSubject
+{
+	position:absolute;
+	width: 470px;
+	height: 40px;
+	left: 100px;
+	top: 152px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/holeEmailSubject.png);
+}
+
+#holeSubject input
+{
+	font-family: Arial;
+	font-size: 14px;
+	color: #ffd68a;
+	width: 450px;
+	margin: 9px;
+	border: none;
+	background-color: transparent;
+}
+
+#holeSubject input:focus
+{
+    outline: none;
+}
+
+#monkey
+{	
+	position:absolute;
+	width: 340px;
+	height: 387px;
+	left: 637px;
+	top: 0px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/monkey.png);
+}
+
+#speakBubbleMonkey
+{
+	position: absolute;
+	top: 145px;
+	width: 240px;
+	height: 160px;
+}
+
+#speakBubbleMonkeyBack
+{
+	position: absolute;
+	width: 240px;
+	height: 140px;
+	left: 0px;
+	top: 0px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/speakBubbleTexture.png);
+	
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#speakBubbleMonkeyTriangle
+{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 110px;
+	top: 140px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/speakBubbleTriangle.png); 
+}
+
+#speakBubbleMonkeyText
+{
+	position: absolute;
+	left: 20px;
+	top: 62px;
+	width: 200px;
+	height: 100px;
+	display: inline-block;
+	
+	font-family: Arial;
+	font-size: 14px;
+	color: #bbbbbb;
+}
+
+#speakBubbleMonkeyTextThankYou
+{
+	position: absolute;
+	width: 198px;
+	height: 17px;
+	left: 20px;
+	top: 32px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/textThankYou.png);
+}
+
+#textYourEmail
+{
+	position:absolute;
+	width: 87px;
+	height: 21px;
+	left: 0px;
+	top: 102px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/textYourEmail.png);
+}
+
+#textMessage
+{
+	position:absolute;
+	width: 70px;
+	height: 22px;
+	left: 0px;
+	top: 217px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/textMessage.png);
+}
+
+#textPleaseFill
+{
+	position:absolute;
+	width: 202px;
+	height: 22px;
+	left: 202px;
+	top: 410px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/textPleaseFillOut.png);
+}
+
+#textSendingMessage
+{
+	position:absolute;
+	width: 138px;
+	height: 22px;
+	left: 266px;
+	top: 410px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/textSendingMessage.png);
+}
+
+#textMessageSent
+{
+	position:absolute;
+	width: 204px;
+	height: 22px;
+	left: 200px;
+	top: 410px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/textMessageSent.png);
+}
+
+#textMessageWrong
+{
+	position:absolute;
+	width: 273px;
+	height: 22px;
+	left: 131px;
+	top: 410px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/textErrorOccured.png);
+}
+
+#textSubject
+{
+	position:absolute;
+	width: 66px;
+	height: 22px;
+	left: 0px;
+	top: 161px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/textSubject.png);
+}
+
+#textValidEmail
+{
+	position: absolute;
+	width: 238px;
+	height: 22px;
+	left: 165px;
+	top: 410px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/textValidEmail.png);
+}
+
+#titleContact
+{
+	position:absolute;
+	width: 193px;
+	height: 41px;
+	left: 0px;
+	top: 35px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/titleContact.png);
+}

@@ -1,0 +1,849 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #F9BF3B;
+}
+
+.display-none
+{
+	display: none;
+}
+
+@font-face
+{
+	font-family: 'frankfurter-plain';
+    src: url('http://www.rleonardi.com/illustration-portfolio/font/frankfurter-plain.eot');
+    src: url('../font/frankfurter-plain.eot') format('embedded-opentype'),
+         url('../font/frankfurter-plain.woff') format('woff'),
+         url('../font/frankfurter-plain.ttf') format('truetype'),
+         url('../font/frankfurter-plain.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fade-out
+{
+	animation-name: fade-out;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.icon-background
+{
+	position: absolute;
+	width: 120px;
+	height: 240px;
+}
+
+.icon-background:hover
+{
+	animation-name: shift;
+    animation-duration: 0.5s;
+}
+
+#icon-background-facebook
+{
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/icon-background-facebook.png);
+}
+
+#icon-background-instagram
+{
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/icon-background-instagram.png);
+}
+
+#icon-background-twitter
+{
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/icon-background-twitter.png);
+}
+
+#icon-background-dribbble
+{
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/icon-background-dribbble.png);
+}
+
+#icon-background-linkedin
+{
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/icon-background-linkedin.png);
+}
+
+#icon-background-email
+{
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/icon-background-email.png);
+}
+
+#icons-container
+{
+	position: absolute;
+	width: 760px;
+	height: 120px;
+	left: 50%;
+	top: 50%;
+	margin-left: -380px;
+	margin-top: 150px;
+	overflow: hidden;
+}
+
+.icon-container
+{
+	position: relative;
+	width: 120px;
+	height: 120px;
+	border-radius: 20px;
+	overflow: hidden;
+	float: left;
+	margin-right: 40px;
+}
+
+.icon-container-last
+{
+	position: relative;
+	width: 120px;
+	height: 120px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.image
+{
+	position: relative;
+	width: 1200px;
+	display: table; /*to eliminate extra space at bottom and to make height wrap content*/
+	margin-bottom: 30px;
+}
+
+.image-half
+{
+	position: relative;
+	width: 585px;
+	margin-bottom: 30px;
+	margin-right: 30px;
+	float: left;
+}
+
+img
+{
+	display: table; /*to eliminate extra space at bottom*/
+}
+
+@-webkit-keyframes fade-out
+{
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes fade-out
+{
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes fade-out
+{
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fade-out
+{
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-webkit-keyframes shift
+{
+    from {top: 0px}
+    to {top: -120px}
+}
+@-moz-keyframes shift
+{
+    from {top: 0px}
+    to {top: -120px}
+}
+@-o-keyframes shift
+{
+    from {top: 0px}
+    to {top: -120px}
+}
+@keyframes shift
+{
+    from {top: 0px}
+    to {top: -120px}
+}
+
+@-webkit-keyframes mouse-scroll-text-animation
+{
+  0%   { opacity: 1; }
+  50%   { opacity: 1; }
+  51%   { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes mouse-scroll-text-animation
+{
+  0%   { opacity: 1; }
+  50%   { opacity: 1; }
+  51%   { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-o-keyframes mouse-scroll-text-animation
+{
+  0%   { opacity: 1; }
+  50%   { opacity: 1; }
+  51%   { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes mouse-scroll-text-animation
+{
+  0%   { opacity: 1; }
+  50%   { opacity: 1; }
+  51%   { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-webkit-keyframes projects-shift-up
+{
+  0%   { top: 100%; }
+  100% { top: 30px; }
+}
+@-moz-keyframes projects-shift-up
+{
+  0%   { top: 100%; }
+  100% { top: 30px; }
+}
+@-o-keyframes projects-shift-up
+{
+  0%   { top: 100%; }
+  100% { top: 30px; }
+}
+@keyframes projects-shift-up
+{
+  0%   { top: 100%; }
+  100% { top: 30px; }
+}
+
+@-webkit-keyframes projects-shift-left
+{
+  0%   { left: 100%; }
+  100% { left: 0%; }
+}
+@-moz-keyframes projects-shift-left
+{
+  0%   { left: 100%; }
+  100% { left: 0%; }
+}
+@-o-keyframes projects-shift-left
+{
+  0%   { left: 100%; }
+  100% { left: 0%; }
+}
+@keyframes projects-shift-left
+{
+  0%   { left: 100%; }
+  100% { left: 0%; }
+}
+
+@keyframes shift-up
+{
+	0%   { top: 100%; }
+  	100% { top: 50%; }
+}
+
+@keyframes shift-down
+{
+	0%   { top: 0%; }
+  	100% { top: 50%; }
+}
+
+@keyframes shift-left
+{
+	0%   { left: 100%; }
+  	100% { left: 50%; }
+}
+
+@keyframes shift-right
+{
+	0%   { left: 0%; }
+  	100% { left: 50%; }
+}
+
+#loaded-image-percentage-text
+{
+	position: absolute;
+	width: 500px;
+	height: 60px;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -100px;
+	font-family: frankfurter-plain;
+	color: #ffffff;
+	font-size: 60px;
+	text-align: center;
+}
+
+#loaded-image-percentage-box
+{
+	position: absolute;
+	width: 340px;
+	height: 20px;
+	left: 50%;
+	top: 50%;
+	margin-left: -170px;
+	margin-top: -10px;
+	border-radius: 10px;
+	background-color: #F5AB35;
+	overflow: hidden;
+}
+
+#loaded-image-percentage-bar
+{
+	position: absolute;
+	width: 0px;
+	height: 20px;
+	left: 0px;
+	top: 0px;
+	background-color: #57D298;
+}
+
+#mouse-scroll
+{
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+	width: 300px;
+	height: 50px;
+	margin-left: -150px;
+	border-radius: 25px;
+	background-color: #57D298;
+}
+
+#mouse-scroll-text
+{
+	position: relative;
+	font-family: frankfurter-plain;
+	color: #ffffff;
+	font-size: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 11px;
+	display: table; /*to make height wrap content*/
+
+	-webkit-animation: mouse-scroll-text-animation 1s infinite; /* Safari 4+ */
+	-moz-animation:    mouse-scroll-text-animation 1s infinite; /* Fx 5+ */
+	-o-animation:      mouse-scroll-text-animation 1s infinite; /* Opera 12+ */
+	animation:         mouse-scroll-text-animation 1s infinite; /* IE 10+, Fx 29+ */
+}
+
+#ornament-book
+{
+	position: absolute;
+	width: 275px;
+	height: 270px;
+	left: 50%;
+	top: 50%;
+	margin-left: 834px;
+	margin-top: 30px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/book.png);
+}
+
+#ornament-container
+{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#ornament-contact-screen
+{
+	position: absolute;
+	width: 540px;
+	height: 310px;
+	left: 30px;
+	top: 30px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/ornament-contact-screen.png);
+}
+
+#ornament-clock
+{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	left: 50%;
+	top: 50%;
+	margin-left: -936px;
+	margin-top: -541px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/clock.png);
+}
+
+#ornament-clock-hour
+{
+	position: absolute;
+	width: 280px;
+	height: 280px;
+	left: 0px;
+	top: 0px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/clock-hour.png);
+}
+
+#ornament-clock-minute
+{
+	position: absolute;
+	width: 280px;
+	height: 280px;
+	left: 0px;
+	top: 0px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/clock-minute.png);
+}
+
+#ornament-cup
+{
+	position: absolute;
+	width: 190px;
+	height: 280px;
+	left: 50%;
+	top: 50%;
+	margin-left: 500px;
+	margin-top: -10px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/cup.png);
+}
+
+#ornament-computer
+{
+	position: absolute;
+	width: 630px;
+	height: 570px;
+	left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -270px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/computer.png);
+}
+
+#ornament-computer-shine
+{
+	position: absolute;
+	width: 220px;
+	height: 220px;
+	left: 0px;
+	top: 0px%;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/computer-shine.png);
+}
+
+#ornament-eraser
+{
+	position: absolute;
+	width: 100px;
+	height: 50px;
+	left: 50%;
+	top: 50%;
+	margin-left: 950px;
+	margin-top: -140px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/eraser.png);
+}
+
+#ornament-floor-and-ceiling
+{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #F5AB35;
+}
+
+#ornament-lightbulb-1
+{
+	position: absolute;
+	width: 110px;
+	height: 490px;
+	left: 50%;
+	top: 50%;
+	margin-left: -140px;
+	margin-top: -870px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/lightbulb.png);
+}
+
+#ornament-lightbulb-2
+{
+	position: absolute;
+	width: 110px;
+	height: 390px;
+	left: 50%;
+	top: 50%;
+	margin-left: 60px;
+	margin-top: -870px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/lightbulb.png);
+	background-position: center bottom;
+}
+
+#ornament-orange
+{
+	position: absolute;
+	width: 140px;
+	height: 183px;
+	left: 50%;
+	top: 50%;
+	margin-left: 660px;
+	margin-top: 86px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/orange.png);
+}
+
+#ornament-paper
+{
+	position: absolute;
+	width: 270px;
+	height: 100%;
+	top: -100%;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/paper.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+#ornament-paper-container
+{
+	position: absolute;
+	width: 270px;
+	height: 100%;
+	left: 50%;
+	top: 50%;
+	margin-left: -930px;
+	margin-top: 230px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+#ornament-photo
+{
+	position: absolute;
+	width: 190px;
+	height: 230px;
+	left: 50%;
+	top: 50%;
+	margin-left: -1200px;
+	margin-top: -380px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/photo.png);
+}
+
+#ornament-plane
+{
+	position: absolute;
+	width: 510px;
+	height: 120px;
+	left: 50%;
+	top: 50%;
+	margin-left: 660px;
+	margin-top: -90px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/plane.png);
+}
+
+#ornament-printer
+{
+	position: absolute;
+	width: 600px;
+	height: 430px;
+	left: 50%;
+	top: 50%;
+	margin-left: -1080px;
+	margin-top: -130px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/printer.png);
+}
+
+#ornament-sharpener-1
+{
+	position: absolute;
+	width: 370px;
+	height: 300px;
+	left: 50%;
+	top: 50%;
+	margin-left: 590px;
+	margin-top: -390px;
+}
+
+#ornament-sharpener-1-body
+{
+	position: absolute;
+	width: 370px;
+	height: 330px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/sharpener-1-body.png);
+}
+
+#ornament-sharpener-1-body-shadow
+{
+	position: absolute;
+	width: 370px;
+	height: 330px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/sharpener-1-body-shadow.png);
+}
+
+#ornament-sharpener-1-handle
+{
+	position: absolute;
+	width: 270px;
+	height: 270px;
+	left: 35px;
+	top: 15px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/sharpener-1-handle.png);
+}
+
+#ornament-sharpener-1-handle-shadow
+{
+	position: absolute;
+	width: 270px;
+	height: 270px;
+	left: 65px;
+	top: 45px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/sharpener-1-handle-shadow.png);
+}
+
+#ornament-sharpener-2
+{
+	position: absolute;
+	width: 50px;
+	height: 80px;
+	left: 50%;
+	top: 50%;
+	margin-left: 850px;
+	margin-top: -170px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/sharpener-2.png);
+}
+
+.ornament-shift-up
+{
+	animation-name: shift-up;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.ornament-shift-down
+{
+	animation-name: shift-down;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.ornament-shift-left
+{
+	animation-name: shift-left;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.ornament-shift-right
+{
+	animation-name: shift-right;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+#ornament-speaker-1
+{
+	position: absolute;
+	width: 170px;
+	height: 270px;
+	left: 50%;
+	top: 50%;
+	margin-left: -460px;
+	margin-top: 30px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/speaker.png);
+}
+
+#ornament-speaker-2
+{
+	position: absolute;
+	width: 170px;
+	height: 270px;
+	left: 50%;
+	top: 50%;
+	margin-left: 320px;
+	margin-top: 30px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/speaker.png);
+}
+
+#ornament-table
+{
+	position: absolute;
+	width: 2280px;
+	height: 600px;
+	left: 50%;
+	top: 50%;
+	margin-left: -1080px;
+	margin-top: 270px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/table.png);
+}
+
+#ornament-title-screen
+{
+	position: absolute;
+	width: 540px;
+	height: 310px;
+	left: 30px;
+	top: 30px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/ornament-title-screen.png);
+}
+
+#ornament-tool
+{
+	position: absolute;
+	width: 186px;
+	height: 294px;
+	left: 50%;
+	top: 50%;
+	margin-left: 857px;
+	margin-top: -342px;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/tool.png);
+}
+
+#ornament-wall
+{
+	position: fixed;
+	left: 0px;
+	top: 50%;
+	width: 100%;
+	height: 1740px;
+	margin-top: -870px;
+	background-color: #F9BF3B;
+}
+
+#preloader
+{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#projects
+{
+	position: absolute;
+	width: 100%; /*so project div will use their auto value for margin left and right, this will make project div center horizontally in mobile devices*/
+	top: 100%;
+	display: table; /*to make height wrap content*/
+}
+
+#projects-bottom
+{
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	top: 100%;
+	left: 0px;
+}
+
+.project-button
+{
+	position: absolute;
+	right: 30px;
+	bottom: 47px;
+	background-color: #D63152;
+	border-radius: 10px;
+	padding: 14px 20px 16px 20px;
+
+	font-family: frankfurter-plain;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.project-button:hover
+{
+	background-color: #e3264c;
+}
+
+.projects-shift-left /*for sub page, projects div will be animated to left instead of hidden at right*/
+{
+	animation-name: projects-shift-left;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.projects-shift-up /*for sub page, projects div will be animated to top instead of hidden at bottom*/
+{
+	animation-name: projects-shift-up;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.project
+{
+	position: relative;
+	width: 1230px;
+	display: table; /*to make height wrap content*/
+	padding-left: 30px;
+	padding-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+	border-radius: 30px;
+	background-color: #FFFFFF;
+}
+
+.project-half
+{
+	position: relative;
+	width: 615px;
+	float: left;
+}
+
+.project-last /*similar to container-project class but with no margin bottom*/
+{
+	position: relative;
+	width: 1230px;
+	display: table; /*to make height wrap content*/
+	padding-left: 30px;
+	padding-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	border-radius: 30px;
+	background-color: #FFFFFF;
+}
+
+.text-body
+{
+	position: relative;
+	font-family: Sans-Serif;
+	color: #333333;
+	font-size: 14px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+.text-body-title
+{
+	float: left;
+	margin-right: 10px;
+	clear: left;
+}
+
+.text-title
+{
+	position: relative;
+	font-family: frankfurter-plain;
+	color: #3498DB;
+	font-size: 36px;
+	margin-top: -10px;
+	margin-bottom: 5px;
+	float: left; /*to fix extra vertical gap issue between image-half class and text-title*/
+}
+
+.transparent
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(http://www.rleonardi.com/illustration-portfolio/image/image.png);
+}
+
+.stop-scroll /*add this class to body to prevent page scroll*/
+{
+	height: 100%;
+  	overflow: hidden;
+}

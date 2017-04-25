@@ -1,0 +1,1047 @@
+<html>
+<head>
+
+<title>Robby Leonardi  |  hey@rleonardi.com</title>
+
+<meta name="description" content="Tutorial from Robby Leonardi about his design portfolio website. It will teach how to create a javascript animation based on mouse movement and page scrolling." />
+<meta charset="UTF-8" />
+
+<meta property="og:title" content="Javascript Animation Tutorial by Robby Leonardi" />
+<meta property="og:site_name" content="Robby Leonardi"/>
+<meta property="og:url" content="http://www.rleonardi.com/tutorial/design-portfolio/" />
+<meta property="og:description" content="This tutorial will teach you to create a parallax animation using mouse movement and page scrolling." />
+<meta property="og:image" content="http://www.rleonardi.com/tutorial/design-portfolio/images/bird-social-image.png" />
+        
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@rleonardi" />
+<meta name="twitter:title" content="Javascript Animation Tutorial by Robby Leonardi" />
+<meta name="twitter:description" content="This tutorial will teach you to create a parallax animation using mouse movement and page scrolling." />
+<meta name="twitter:image" content="http://www.rleonardi.com/tutorial/design-portfolio/images/bird-social-image.png" />
+<meta name="twitter:url" content="http://www.rleonardi.com/tutorial/design-portfolio/" />
+
+<link href="css/header.css" rel="stylesheet" type="text/css" />
+<link href="css/contentStatic.css" rel="stylesheet" type="text/css" />
+<link href="css/contentAnimation.css" rel="stylesheet" type="text/css" />
+<link href="css/page.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<script type="text/javascript" src="script/browser.js"></script>
+<script type="text/javascript" src="script/contentVariable.js"></script>
+
+<div class="center">
+
+<div id="topArea">
+
+        <div class="titleTextBig">
+            TUTORIAL
+        </div>
+        
+        <div class="explanationText">
+        	This tutorial is based on Robby Leonardi&#8217;s <a href="../../design-portfolio/index.html" target="_blank">design portfolio website</a> and it will teach you the javascript animation trick behind that website. However the code will be simplified to make it easier to learn. I hope you will enjoy this tutorial and I hope it could be useful. Happy learning guys :)
+        </div>
+       
+</div>
+
+<div class="title">
+    <div class="titleText">
+        1. Parallax Effect on Mouse Move
+    </div>
+</div>
+
+<!-- HEADER -->
+
+<div id="header">
+    
+    	<div id="cloudTop1">
+        </div>
+        
+        <div id="cloudTop2">
+        </div>
+        
+        <div id="cloudTop3">
+        </div>
+
+		<div id="cloudBack">
+        </div>
+        
+        <div id="island">
+        </div>
+        
+        <div id="bush1">
+    		
+        </div>
+        
+        <div id="bush2">
+        </div>
+    
+    	<div id="seaweed1">
+        </div>
+        
+        <div id="seaweed2">
+        </div>
+    
+    	<div id="thornBranch1">
+    		
+        </div>
+        
+        <div id="thornBranch2">
+        </div>
+        
+        <div id="thornBranch3">
+        </div>
+
+		<div id="cloudFront">
+        </div>
+        
+        <div id="cloudFrontBottom">
+        </div>
+    
+    	<div id="treeLeavesLeft">
+        </div>
+    
+    	<div id="treeLeavesRight">
+        </div>
+    
+    	<div id="treeBranch">
+        </div>
+    
+     	<div id="bird">
+        </div>
+    
+    	<div id="snake">
+        </div>
+    
+    	<div id="squid">
+        </div>
+        
+        <div id="mushroom1">
+        </div>
+        
+        <div id="mushroom2">
+        </div>
+        
+        <div id="mushroom3">
+        </div>
+        
+<script type="text/javascript" src="script/header.js"></script>
+        
+</div> <!-- HEADER END -->
+
+<!-- HEADER TEXT -->
+
+<div class="explanation">
+	<div class="explanationText">
+    	First, all of images and their data will be stored in an array called <b>objectArray</b>.
+	</div>
+</div>
+
+<div class="code3">
+		
+        <div class="codeText">
+        	var objectArray = new Array(); <br />
+			<br />
+			fillObjectArray(); <br />
+            <br />
+    		function fillObjectArray() <br />
+			{ <br />
+        </div>
+        
+        <div class="code2Indent1">
+            <div class="codeText">
+                var birdDiv = document.getElementById("bird"); <br />
+                var birdX = 312; <br />
+                var birdY = 33; <br />
+                var birdFactor = 0.05; <br />
+                var birdArray = new Array(); <br />
+                birdArray.push(birdDiv, birdX, birdY, birdFactor); <br />
+                objectArray.push(birdArray); <br />
+                <br />
+                var bush1Div = document.getElementById("bush1"); <br />
+                var bush1X = -28; <br />
+                var bush1Y = 352; <br />
+                var bush1Factor = 0.06; <br />
+                var bush1Array = new Array(); <br />
+                bush1Array.push(bush1Div, bush1X, bush1Y, bush1Factor); <br />
+                objectArray.push(bush1Array); <br />
+                <br />
+                ...
+            </div>
+        </div>
+        
+        <div class="codeText">
+       		} <br />
+    	</div>
+        
+</div>
+
+<div class="code2">
+		
+	<div class="codeText">
+    	//object array after fillObjectArray() function is executed <br />
+    	<br />
+    	objectArray[0][0] = birdDiv; <br />
+		objectArray[0][1] = 312; <br />
+		objectArray[0][2] = 33; <br />
+		objectArray[0][3] = 0.05; <br />
+		<br />
+		objectArray[1][0] = bush1Div; <br />
+		objectArray[1][1] = -28; <br />
+		objectArray[1][2] = 352; <br />
+		objectArray[1][3] = 0.06; <br />
+		<br />
+        ...
+		<br />
+    </div>
+        
+</div>
+
+<div class="explanation">
+	<div class="explanationText">
+    <br />
+    	Next code is the engine of this parallax effect. <b>tempX</b> is the mouse x position. <b>windowWidth</b> is an inner width of user's browser window. <b>objectArray[i][3]</b> is the parallax factor number. The bigger this number, the more parallax effect on mouse movement. Foreground objects such as snake and squid have bigger <b>objectArray[i][3]</b> values compare to background objects such as flying island and bird. <b>objectArray[i][1]</b> is the image's original x position before it is shifted. On mouse movement, <b>objectArray[i][1]</b> value will be reduced or added by <b>objectArray[i][3] * (0.5 * windowWidth - tempX)</b>. This <b>objectArray[i][3] * (0.5 * windowWidth - tempX)</b> means the parallax factor number is multiplied by the x mouse distance from browser window's center. Then this value will be stored in <b>yourDivPositionX</b>, and <b>yourDivPositionX</b> will be used to update the images' x position. Since this function is applied to every images inside <b>objectArray</b>, all of those images will be shifted every time user moves the mouse.
+	</div>
+</div>
+
+<div id="image-1-1"></div>
+
+<div class="code2">
+		
+	<div class="codeText">
+    	function moveDiv(tempX) <br />
+		{ <br />
+    </div>
+    
+    <div class="code2Indent1">
+    	<div class="codeText">
+            for (var i=0;i&lt;objectArray.length;i++) <br />
+            { <br />
+        </div>
+        
+        <div class="code2Indent2">
+        	<div class="codeText">
+            	var yourDivPositionX = objectArray[i][3] * (0.5 * windowWidth - tempX) + objectArray[i][1]; <br />
+            	objectArray[i][0].style.left = yourDivPositionX + "px"; <br />
+            </div>
+        </div>      
+                
+        <div class="codeText">
+            } <br />
+        </div>
+    </div>
+    
+    <div class="codeText">
+    	} <br />
+    </div>
+           
+</div>
+
+<br />
+
+<div class="imageTextContainer">
+	<div class="imageText">
+		image 1.1.
+	</div>
+</div>
+        
+<!-- HEADER TEXT END -->
+
+<!-- HEADER BUTTON -->
+
+<div class="buttonContainer">
+	<br />
+	<div class="explanationText">
+    	View complete: 
+    </div>
+    
+    <br />
+    <br />
+	
+    <a href="script/header.js" target="_blank">
+        <div class="buttonJavascript"></div>
+    </a>
+    
+    <a href="css/header.css" target="_blank">
+    	<div class="buttonCSS"></div>
+    </a>
+</div>
+
+<!-- HEADER BUTTON END -->
+
+<!--<div class="ad"></div>-->
+
+<!-- THUMBNAIL PAPER TITLE -->
+
+<div class="title">
+    <div class="titleText">
+        2. Thumbnail Shifting Animation
+    </div>
+</div>
+
+<!-- THUMBNAIL PAPER TITLE END -->
+
+<!-- CONTENT THUMBNAIL PAPER-->
+
+<div id="contentThumbnailPaper">
+
+<div class="stringGear"></div>
+<div class="stringGear"></div>
+
+<div id="thumbnailPaperContainerToRight01" class="thumbnailPaperContainer">
+
+	
+		<div id="thumbnailPaper01" class="thumbnailPaper">
+    		<div class="thumbnailPaperImage">
+        		<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmGraJpgPao.jpg"/>       	 	</div>
+            
+            <div class="thumbnailPaperCaptionArea">
+            	<div class="thumbnailPaperCaption">
+        			<span>
+            			Pinks All Out<br/><br/>
+                		<em>Microsite</em><br/>
+                		<em>SPEED TV</em>                	</span>            	</div>
+            </div>
+                    
+			<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/frame.png"/>		</div>
+    
+    
+    
+		<div id="thumbnailPaper02" class="thumbnailPaper">
+    		<div class="thumbnailPaperImage">
+        		<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmGraJpgNiptuck.jpg"/>        	</div>
+            
+            <div class="thumbnailPaperCaptionArea">
+            	<div class="thumbnailPaperCaption">
+        			<span>
+            			NipTuck<br/><br/>
+                		<em>Rich Media Ad</em><br/>
+                		<em>FX Network</em>                	</span>            	</div>
+            </div>
+            
+			<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/frame.png"/>		</div>
+   
+	
+    
+		<div id="thumbnailPaper03" class="thumbnailPaper">
+    		<div class="thumbnailPaperImage">
+        		<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmGraJpgHairclub.jpg"/>        	</div>
+            
+            <div class="thumbnailPaperCaptionArea">
+            	<div class="thumbnailPaperCaption">
+        			<span>
+            			Hairclub for Man<br/><br/>
+                		<em>Microsite</em><br/>
+                		<em>Hairclub</em>                	</span>            	</div>
+            </div>
+            
+			<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/frame.png"/>		</div>
+   
+
+	
+		<div id="thumbnailPaper04" class="thumbnailPaper">
+    		<div class="thumbnailPaperImage">
+        		<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmGraJpgWrecked.jpg"/>       		</div>
+            
+            <div class="thumbnailPaperCaptionArea">
+            	<div class="thumbnailPaperCaption">
+        			<span>
+            			Wrecked<br/><br/>
+                		<em>Microsite</em><br/>
+                		<em>SPEED TV</em>                	</span>            	</div>
+            </div>
+            
+			<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/frame.png"/>		</div>
+   
+
+	
+		<div id="thumbnailPaper05" class="thumbnailPaperNoMargin">
+    		<div class="thumbnailPaperImage">
+        		<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmGraJpgDisease.jpg"/>        	</div>
+            
+            <div class="thumbnailPaperCaptionArea">
+            	<div class="thumbnailPaperCaption">
+        			<span>
+            			SPEED Disease<br/><br/>
+                		<em>Microsite</em><br/>
+                		<em>SPEED TV</em>                	</span>            	</div>
+            </div>
+            
+			<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/frame.png"/>		</div>
+</div>
+
+<div id="thumbnailPaperContainerToLeft01" class="thumbnailPaperContainer">
+
+		<div id="thumbnailPaper06" class="thumbnailPaper">
+    		<div class="thumbnailPaperImage">
+        		<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmGraJpgEltesoro.jpg"/>        	</div>
+            
+            <div class="thumbnailPaperCaptionArea">
+            	<div class="thumbnailPaperCaption">
+        			<span>
+            			El Tesoro<br/><br/>
+                		<em>Website</em><br/>
+                		<em>El Tesoro</em>                	</span>            	</div>
+            </div>
+            
+			<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/frame.png"/>		</div>
+    
+		<div id="thumbnailPaper07" class="thumbnailPaper">
+    		<div class="thumbnailPaperImage">
+        		<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmGraJpgElderlife.jpg"/>        	</div>
+            
+            <div class="thumbnailPaperCaptionArea">
+            	<div class="thumbnailPaperCaption">
+        			<span>
+            			Elderlife Financial<br/><br/>
+                		<em>Website</em><br/>
+                		<em>Elderlife Financial</em>                	</span>            	</div>
+            </div>
+            
+			<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/frame.png"/>		</div>
+    
+		<div id="thumbnailPaper08" class="thumbnailPaper">
+    		<div class="thumbnailPaperImage">
+        		<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmGraJpgSkyy.jpg"/>        	</div>
+            
+            <div class="thumbnailPaperCaptionArea">
+            	<div class="thumbnailPaperCaption">
+        			<span>
+            			5 in the Skyy<br/><br/>
+                		<em>Microsite</em><br/>
+                		<em>Skyy Vodka</em>                	</span>            	</div>
+            </div>
+            
+			<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/frame.png"/>		</div>
+        
+        <div id="thumbnailPaper09" class="thumbnailPaper">
+    		<div class="thumbnailPaperImage">
+        		<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmGraJpgWp7.jpg"/>        	</div>
+            
+            <div class="thumbnailPaperCaptionArea">
+            	<div class="thumbnailPaperCaption">
+        			<span>
+            			Fox News Windows Phone App<br/><br/>
+                		<em>Mobile App</em><br/>
+                		<em>Fox News</em>                	</span>            	</div>
+            </div>
+            
+			<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/frame.png"/>		</div>
+        
+        <div id="thumbnailPaper10" class="thumbnailPaperNoMargin">
+    		<div class="thumbnailPaperImage">
+        		<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmGraJpgWarstories.jpg"/>        	</div>
+            
+            <div class="thumbnailPaperCaptionArea">
+            	<div class="thumbnailPaperCaption">
+        			<span>
+            			War Stories<br/><br/>
+                		<em>Website</em><br/>
+                		<em>Fox News</em>                	</span>            	</div>
+            </div>
+            
+			<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/frame.png"/>		</div>
+</div>
+</div>
+
+<script type="text/javascript" src="script/contentStatic.js"></script>
+
+<!-- CONTENT THUMBNAIL PAPER END-->
+
+<!-- THUMBNAIL PAPER TEXT-->
+
+<div class="explanation">
+	<div class="explanationText">
+    	This code shifts the thumbnail group:
+	</div>
+</div>
+
+<div class="code">	
+	<div class="codeText">
+    	thumbnailPaperContainerArray[i].style.left = thumbnailPaperContainerLeftEarlyPositionX + thumbnailPaperContainerShiftAmount + "px";
+    </div>
+</div>
+
+<div id="image-2-1"></div>
+
+<div class="imageTextContainer">
+	<div class="imageText">
+		image 2.1.
+	</div>
+</div>
+
+<div class="explanation">
+	<div class="explanationText">
+    	<b>thumbnailPaperContainerLeftEarlyPositionX</b> is the thumbnail group's x position when it is still hidden. When the mouse is scrolled down, the webpage's y position is calculated and transferred to <b>thumbnailPaperContainerShiftAmount</b>, and this makes <b>thumbnailPaperContainerArray[i]</b> shifts horizontally. The higher the vertical position of <b>thumbnailPaperContainerArray[i]</b>, the bigger the value of <b>thumbnailPaperContainerShiftAmount</b>.
+	</div>
+</div>
+
+<div class="explanation">
+	<div class="explanationText">
+		The equation of <b>thumbnailPaperContainerShiftAmount</b>:
+    </div>
+</div>
+
+<div id="image-2-2"></div>
+
+<div class="code2">	
+	<div class="codeText">
+    	var thumbnailPaperContainerShiftAmount = (verticalPosition + windowHeight - contentThumbnailPaperDiv.offsetTop - thumbnailPaperContainerArray[i].offsetTop) * thumbnailPaperContainerShiftSpeed;
+    </div>
+</div>
+
+<div class="explanation2">
+	<div class="explanationText">
+    	Again, this code just calculates and transfers the webpage's vertical position to <b>thumbnailPaperContainerShiftAmount</b>. <b>verticalPosition</b> is the webpage's y position. <b>windowHeight</b> is an inner height of the browser window. <b>contentThumbnailPaperDiv.offsetTop</b> is the y position of thumbnail group container. <b>thumbnailPaperContainerArray[i].offsetTop</b> is the y position of each thumbnail group. And finally <b>thumbnailPaperContainerShiftSpeed</b> is a factor number. The bigger this number, the bigger is <b>thumbnailPaperContainerShiftAmount</b>. In this example, <b>thumbnailPaperContainerShiftSpeed</b> is set to 2.
+	</div>
+</div>
+
+<div class="imageTextContainer">
+	<div class="imageText">
+		image 2.2.
+	</div>
+</div>
+
+<div class="explanation">
+	<div class="explanationText">
+    <br />
+    When <b>thumbnailPaperContainerArray[i]</b> is in the middle of browser window, <b>thumbnailPaperContainerArray[i]</b> needs to be locked so it will not keep shifting horizontally.
+    </div>
+</div>
+
+<div id="image-2-3"></div>
+
+<div class="code2">	
+	<div class="codeText">
+    	if (thumbnailPaperContainerLeftEarlyPositionX + thumbnailPaperContainerShiftAmount > 0.5 * (windowWidth - thumbnailPaperContainerArray[0].offsetWidth)) <br />
+        { <br />
+        <div class="code2Indent1">thumbnailPaperContainerArray[i].style.left = 0.5 * (windowWidth - thumbnailPaperContainerArray[i].offsetWidth) + "px";</div>
+        }
+    </div>
+</div>
+
+<div class="explanation2">
+	<div class="explanationText">
+    <b>thumbnailPaperContainerLeftEarlyPositionX + thumbnailPaperContainerShiftAmount</b> is x position of <b>thumbnailPaperContainerArray[i]</b> when the user scrolls the mouse. <b>0.5 * (windowWidth - thumbnailPaperContainerArray[0].offsetWidth)</b> is x position when <b>thumbnailPaperContainerArray[i]</b> exactly at the middle of user's browser window. <b>windowWidth</b> is an inner width of the browser window, and <b>thumbnailPaperContainerArray[0].offsetWidth</b> is the first thumbnail group width. This code basically says if any thumbnail group moves beyond the middle of browser window, put it back to the middle again.
+    </div>
+</div>
+
+<div class="imageTextContainer">
+	<div class="imageText">
+		image 2.3.
+	</div>
+</div>
+
+<!-- THUMBNAIL PAPER TEXT END -->
+
+<!-- THUMBNAIL PAPER BUTTON -->
+
+<div class="buttonContainer">
+	<br />
+	<div class="explanationText">
+    	View complete: 
+    </div>
+    
+    <br />
+    <br />
+	
+    <a href="script/contentStatic.js" target="_blank">
+        <div class="buttonJavascript"></div>
+    </a>
+    
+    <a href="css/contentStatic.css" target="_blank">
+    	<div class="buttonCSS"></div>
+    </a>
+</div>
+
+<!-- THUMBNAIL PAPER BUTTON END -->
+
+<!--<div class="ad"></div>-->
+
+<!-- THUMBNAIL WINDOW TITLE -->
+
+<div class="title">
+    <div class="titleText">
+        3. Sequential Window Opening Animation
+    </div>
+</div>
+
+<!-- THUMBNAIL WINDOW TITLE END -->
+
+<!-- CONTENT THUMBNAIL WINDOW-->
+
+<div id="contentThumbnailWindow">
+
+	<div id="window1" class="thumbnailWindow">
+
+		<div class="thumbnailWindowImage">
+        	<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmAnmSwfIncognito.jpg"/>
+    	</div>
+        
+        <div class="thumbnailWindowCaptionArea">
+        	<div class="thumbnailWindowCaption">
+        		<span>
+            		Client Showcase<br/><br/>
+                	<em>Website Animation</em><br/>
+                	<em>Incognito Digital</em>
+            	</span>
+        	</div>
+        </div>
+        
+        <div class="windowFrameTop">
+    	</div>
+        
+        <div class="windowFrameLeft">
+    	</div>
+        
+        <div class="windowFrameRight">
+    	</div>
+        
+        <div class="windowFrameBottom">
+    	</div>
+    
+    	<div id= "windowLeft1" class="windowLeft">
+    		<div id= "windowLeftOpening1" class="windowLeftOpening">
+        	</div>
+    	</div>
+    
+    	<div id= "windowRight1" class="windowRight">
+    		<div id= "windowRightOpening1" class="windowRightOpening">
+        	</div>
+    	</div>
+    
+	</div>
+    
+	<div id="window2" class="thumbnailWindow">
+
+		<div class="thumbnailWindowImage">
+        	<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmAnmSwfBullrun.jpg"/>
+    	</div>
+        
+        <div class="thumbnailWindowCaptionArea">
+        	<div class="thumbnailWindowCaption">
+        		<span>
+            		Bullrun<br/><br/>
+                	<em>Banner Ad</em><br/>
+                	<em>SPEED TV</em>
+            	</span>
+        	</div>
+        </div>
+    
+    	<div class="windowFrameTop">
+    	</div>
+        
+        <div class="windowFrameLeft">
+    	</div>
+        
+        <div class="windowFrameRight">
+    	</div>
+        
+        <div class="windowFrameBottom">
+    	</div>
+    
+    	<div id= "windowLeft2" class="windowLeft">
+    		<div id= "windowLeftOpening2" class="windowLeftOpening">
+        	</div>
+    	</div>
+    
+    	<div id= "windowRight2" class="windowRight">
+    		<div id= "windowRightOpening2" class="windowRightOpening">
+        	</div>
+    	</div>
+    
+	</div>
+
+	<div id="window3" class="thumbnailWindow">
+
+		<div class="thumbnailWindowImage">
+        	<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmAnmSwfShield.jpg"/>
+    	</div>
+        
+        <div class="thumbnailWindowCaptionArea">
+        	<div class="thumbnailWindowCaption">
+        		<span>
+            		Shield<br/><br/>
+                	<em>Banner Ad</em><br/>
+                	<em>FX Networks</em>
+            	</span>
+        	</div>
+        </div>
+    
+    	<div class="windowFrameTop">
+    	</div>
+        
+        <div class="windowFrameLeft">
+    	</div>
+        
+        <div class="windowFrameRight">
+    	</div>
+        
+        <div class="windowFrameBottom">
+    	</div>
+    
+    	<div id= "windowLeft3" class="windowLeft">
+    		<div id= "windowLeftOpening3" class="windowLeftOpening">
+        	</div>
+    	</div>
+    
+    	<div id= "windowRight3" class="windowRight">
+    		<div id= "windowRightOpening3" class="windowRightOpening">
+        	</div>
+    	</div>
+    
+	</div>
+
+	<div id="window4" class="thumbnailWindow">
+
+		<div class="thumbnailWindowImage">
+        	<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmAnmSwfSoa.jpg"/>
+    	</div>
+        
+        <div class="thumbnailWindowCaptionArea">
+        	<div class="thumbnailWindowCaption">
+        		<span>
+            		Sons of Anarchy<br/><br/>
+                	<em>Rich Media Ad</em><br/>
+                	<em>FX Networks</em>
+            	</span>
+        	</div>
+        </div>
+    
+    	<div class="windowFrameTop">
+    	</div>
+        
+        <div class="windowFrameLeft">
+    	</div>
+        
+        <div class="windowFrameRight">
+    	</div>
+        
+        <div class="windowFrameBottom">
+    	</div>
+    
+    	<div id= "windowLeft4" class="windowLeft">
+    		<div id= "windowLeftOpening4" class="windowLeftOpening">
+        	</div>
+    	</div>
+    
+    	<div id= "windowRight4" class="windowRight">
+    		<div id= "windowRightOpening4" class="windowRightOpening">
+        	</div>
+    	</div>
+    
+	</div>
+
+	<div id="window5" class="thumbnailWindow">
+
+		<div class="thumbnailWindowImage">
+        	<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmAnmSwfSunny.jpg"/>
+    	</div>
+        
+        <div class="thumbnailWindowCaptionArea">
+        	<div class="thumbnailWindowCaption">
+        		<span>
+            		Sunny in Philadelphia<br/><br/>
+                	<em>Rich Media Ad</em><br/>
+                	<em>FX Networks</em>
+            	</span>
+        	</div>
+        </div>
+    
+    	<div class="windowFrameTop">
+    	</div>
+        
+        <div class="windowFrameLeft">
+    	</div>
+        
+        <div class="windowFrameRight">
+    	</div>
+        
+        <div class="windowFrameBottom">
+    	</div>
+    
+    	<div id= "windowLeft5" class="windowLeft">
+    		<div id= "windowLeftOpening5" class="windowLeftOpening">
+        	</div>
+    	</div>
+    
+    	<div id= "windowRight5" class="windowRight">
+    		<div id= "windowRightOpening5" class="windowRightOpening">
+        	</div>
+    	</div>
+    
+	</div>
+
+	<div id="window6" class="thumbnailWindow">
+
+		<div class="thumbnailWindowImage">
+        	<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmAnmSwfNiptuck.jpg"/>
+    	</div>
+        
+        <div class="thumbnailWindowCaptionArea">
+        	<div class="thumbnailWindowCaption">
+        		<span>
+            		NipTuck<br/><br/>
+                	<em>Banner Ad</em><br/>
+                	<em>FX Networks</em>
+            	</span>
+        	</div>
+        </div>
+    
+    	<div class="windowFrameTop">
+    	</div>
+        
+        <div class="windowFrameLeft">
+    	</div>
+        
+        <div class="windowFrameRight">
+    	</div>
+        
+        <div class="windowFrameBottom">
+    	</div>
+    
+    	<div id= "windowLeft6" class="windowLeft">
+    		<div id= "windowLeftOpening6" class="windowLeftOpening">
+        	</div>
+    	</div>
+    
+    	<div id= "windowRight6" class="windowRight">
+    		<div id= "windowRightOpening6" class="windowRightOpening">
+        	</div>
+    	</div>
+    
+	</div>
+
+	<div id="window7" class="thumbnailWindow">
+
+		<div class="thumbnailWindowImage">
+        	<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmAnmSwfTestees.jpg"/>
+    	</div>
+        
+        <div class="thumbnailWindowCaptionArea">
+        	<div class="thumbnailWindowCaption">
+        		<span>
+            		Testees<br/><br/>
+                	<em>Banner Ad</em><br/>
+                	<em>FX Networks</em>
+            	</span>
+        	</div>
+        </div>
+    
+    	<div class="windowFrameTop">
+    	</div>
+        
+        <div class="windowFrameLeft">
+    	</div>
+        
+        <div class="windowFrameRight">
+    	</div>
+        
+        <div class="windowFrameBottom">
+    	</div>
+    
+    	<div id= "windowLeft7" class="windowLeft">
+    		<div id= "windowLeftOpening7" class="windowLeftOpening">
+        	</div>
+    	</div>
+    
+    	<div id= "windowRight7" class="windowRight">
+    		<div id= "windowRightOpening7" class="windowRightOpening">
+        	</div>
+    	</div>
+    
+	</div>
+
+	<div id="window8" class="thumbnailWindow">
+
+		<div class="thumbnailWindowImage">
+        	<img src="http://www.rleonardi.com/tutorial/design-portfolio/images/thmAnmSwfHaier.jpg"/>
+    	</div>
+        
+        <div class="thumbnailWindowCaptionArea">
+        	<div class="thumbnailWindowCaption">
+        		<span>
+            		Music Player<br/><br/>
+                	<em>Website Animation</em><br/>
+                	<em>Haier</em>
+            	</span>
+        	</div>
+        </div>
+    
+    	<div class="windowFrameTop">
+    	</div>
+        
+        <div class="windowFrameLeft">
+    	</div>
+        
+        <div class="windowFrameRight">
+    	</div>
+        
+        <div class="windowFrameBottom">
+    	</div>
+    
+    	<div id= "windowLeft8" class="windowLeft">
+    		<div id= "windowLeftOpening8" class="windowLeftOpening">
+        	</div>
+    	</div>
+    
+    	<div id= "windowRight8" class="windowRight">
+    		<div id= "windowRightOpening8" class="windowRightOpening">
+        	</div>
+    	</div>
+    
+	</div>
+
+<script type="text/javascript" src="script/contentAnimation.js"></script>
+
+</div>
+
+<!-- CONTENT THUMBNAIL WINDOW END-->
+
+<!-- THUMBNAIL WINDOW TEXT -->
+
+<div class="explanation">
+	<div class="explanationText">
+    	The opening window animation is created by using this sequential window image. It is one long image that is shifted horizontally to create an opening window illusion. There are 7 opening window slides, and each of them has the same width (<b>slide_width</b>). So when it is time to shift to next window slide, the horizontal position of this sequential window image will be added or reduced by <b>slide_width</b>. Time to shift the next window slide is triggered by scrolling the mouse.
+    </div>
+</div>
+
+<div id="image-3-1"></div>
+
+<div class="imageTextContainer">
+	<div class="imageText">
+		image 3.1.
+	</div>
+</div>
+
+<br />
+
+<div id="image-3-2"></div>
+
+<div class="imageTextContainer">
+	<div class="imageText">
+		image 3.2.
+	</div>
+</div>
+
+<div class="explanation">
+	<div class="explanationText">
+    Image 3.2. will explain the concept of this window opening animation. First, pay attention at <b>contentThumbnailWindowDiv.offsetTop</b>. Its y position is the same with the first window thumbnail, and it is drawn with continuous red line. When the user scroll the page, this line will move to different areas marked between dotted lines.<br />
+<br />
+This <b>contentThumbnailWindowDiv.offsetTop</b> line is above "limit to start open window 6". It means the sixth window thumbnail will shift its sequential window image (image 3.1.) to slide number 2, which shows only small window opening.<br />
+<br />
+For the first window thumbnail, pay attention at <b>contentThumbnailWindowDiv.offsetTop</b> and "limit to start open window 1". There are 6 dotted lines below <b>contentThumbnailWindowDiv.offsetTop</b> until we reach "limit to start open window 1". Since "limit to start open window" means the sequential window image (image 3.1.) shows slide number 2, 6 dotted lines below <b>contentThumbnailWindowDiv.offsetTop</b> means the sequential window image (image 3.1.) shows slide number 7, which is a fully opened window.<br />
+<br />
+For the second window thumbnail, there are 5 dotted lines below <b>contentThumbnailWindowDiv.offsetTop</b> until we reach "limit to start open window 2". It means the sequential window image (image 3.1.) shows slide number 6. This will be applied to all of the next window thumbnails so every one of them will show its own sequential window image slide number.<br />
+    </div>
+</div>
+
+<div class="explanation">
+	<div class="explanationText">
+    Now let's go to the process of this window animation. Code will detect the webpage’s y position, and its value will be stored in <b>verticalPosition</b>. This vertical position will be added and subtracted with some variables (<b>windowHeight</b> and <b>limitToStartOpenWindowFromBottom</b>), and its value will be compared to the position of window thumbnails container or <b>contentThumbnailWindowDiv.offsetTop</b> with some adjustment. There are 7 conditionals since there are 7 slides of sequential window image (image 3.1.), so each conditional will be represented by one slide of image. 
+    </div>
+</div>
+
+<div id="image-3-3"></div>
+
+<div class="explanation2">
+	<div class="explanationText">
+    	This is the first of seven conditionals. If <b>verticalPosition + windowHeight - limitToStartOpenWindowFromBottom</b> falls under this category, which is less than <b>(i + 1) * scrollGap + contentThumbnailWindowDiv.offsetTop)</b>, then the window should be closed. For the left window panel (<b>windowLeftOpeningArray[i]</b>), this is done with <b>windowLeftOpeningArray[i].style.left = "0px"</b>, since leftmost sequential window image (image 3.1.) shows a closed window.
+    </div>
+</div>
+
+<div class="code2">	
+	<div class="codeText">
+    	//opening window image show slide 1 <br />
+		if (verticalPosition + windowHeight - limitToStartOpenWindowFromBottom < (i + 1) * scrollGap + contentThumbnailWindowDiv.offsetTop) <br />
+		{ <br />
+            <div class="code2Indent1">
+				windowLeftOpeningArray[i].style.left = "0px";<br />
+				windowRightOpeningArray[i].style.left = earlyWindowRightPositionX + "px";
+            </div>
+		}
+    </div>
+</div>
+
+<br />
+
+<div class="explanation2">
+	<div class="explanationText">
+    	The second until sixth conditionals have a very similar code structure, so they will be combined together with the loop <b>for (var j=1; j< 6; j++)</b>. For the left window panel (<b>windowLeftOpeningArray[i]</b>), the second conditional will show an almost closed window, and the sixth conditional will show an almost fully opened window (image 3.1.). Each of <b>verticalPosition + windowHeight - limitToStartOpenWindowFromBottom</b> will be tested with 2 values. The top limit is <b>(i + j + 1) * scrollGap + contentThumbnailWindowDiv.offsetTop)</b>, and the bottom limit is <b>(i + j) * scrollGap + contentThumbnailWindowDiv.offsetTop</b>. Then the sequential window image (image 3.1.) will be shifted to its position with <b>windowLeftOpeningArray[i].style.left = (-j * slide_width) + "px"</b>. This will make the window changes its looks from almost closed until fully opened (slide number 2-6 in image 3.1.).
+    </div>
+</div>
+
+<div class="code2">	
+	<div class="codeText">
+    		//opening window image show slide 2 - 6 <br />
+			for (var j=1; j< 6; j++) <br />
+			{ <br />
+            <div class="code2Indent1">
+				if ((verticalPosition + windowHeight - limitToStartOpenWindowFromBottom >= (i + j) * scrollGap + contentThumbnailWindowDiv.offsetTop) && (verticalPosition + windowHeight - limitToStartOpenWindowFromBottom < (i + j + 1) * scrollGap + contentThumbnailWindowDiv.offsetTop)) <br />
+				{ <br />
+                	<div class="code2Indent2">
+						windowLeftOpeningArray[i].style.left = (-j * slide_width) + "px"; <br />
+						windowRightOpeningArray[i].style.left = earlyWindowRightPositionX + (j * slide_width) + "px"; <br />
+                    </div>
+				} <br />
+            </div>
+			}
+    </div>
+</div>
+
+<div class="imageTextContainer">
+	<div class="imageText">
+		image 3.3.
+	</div>
+</div>
+
+<div class="explanation">
+	<div class="explanationText">
+    This will be the last conditional, if <b>verticalPosition + windowHeight - limitToStartOpenWindowFromBottom</b> is more than <b>(i + 6) * scrollGap + contentThumbnailWindowDiv.offsetTop)</b>, then the sequential window image (image 3.1.) will be shifted to slide number 7. This slide shows a fully opened window image. For the left window panel (<b>windowLeftOpeningArray[i]</b>), this is done with <b>windowLeftOpeningArray[i].style.left = (-6 * slide_width) + "px"</b>.
+    </div>
+</div>
+
+<div class="code">	
+	<div class="codeText">
+    		//opening window image show slide 7 <br />
+			if (verticalPosition + windowHeight - limitToStartOpenWindowFromBottom >= (i + 6) * scrollGap + contentThumbnailWindowDiv.offsetTop) <br />
+			{ <br />
+            	<div class="codeIndent1">
+					windowLeftOpeningArray[i].style.left = (-6 * slide_width) + "px"; <br />
+					windowRightOpeningArray[i].style.left = earlyWindowRightPositionX + (6 * slide_width) + "px"; <br />
+                </div>
+			}
+    </div>
+</div>
+
+<!-- THUMBNAIL WINDOW TEXT END -->
+
+<!-- THUMBNAIL WINDOW BUTTON -->
+
+<div class="buttonContainer">
+	<br />
+	<div class="explanationText">
+    	View complete: 
+    </div>
+    
+    <br />
+    <br />
+	
+    <a href="script/contentAnimation.js" target="_blank">
+        <div class="buttonJavascript"></div>
+    </a>
+    
+    <a href="css/contentAnimation.css" target="_blank">
+    	<div class="buttonCSS"></div>
+    </a>
+</div>
+
+<script type="text/javascript" src="script/contentFunction.js"></script>
+
+<!-- THUMBNAIL WINDOW BUTTON END -->
+
+</div> <!--from div center-->
+
+</body>
+</html>

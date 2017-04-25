@@ -1,0 +1,193 @@
+.bottom
+{
+	position: absolute;
+	width: 160px;
+	height: 5px;
+	left: 69px;
+	top: 184px;
+}
+
+#contentThumbnailWindow
+{
+	position:relative;
+	width: 1024px;
+	overflow: hidden;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/background.png);
+	background-repeat: repeat;
+	padding-top:80px;
+	padding-bottom:40px;
+	margin-bottom: 40px;
+	border-radius: 10px;
+}
+
+#designArea2
+{
+	position:absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#designContainer2
+{
+	position:relative;
+	overflow: hidden;
+}
+
+#frame2
+{
+	position:absolute;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/frame2Texture.jpg);
+}
+
+#frame2Inside
+{
+	position:absolute;
+	background-color: #171514;
+}
+
+.windowFrameTop
+{
+	position: absolute;
+	left: 71px;
+	top: 2px;
+	width: 180px;
+	height: 10px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/windowFrameHor.jpg);
+}
+
+.windowFrameLeft
+{
+	position: absolute;
+	left: 71px;
+	top: 12px;
+	width: 10px;
+	height: 160px;
+	background-color: #ffffff;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/windowFrameVer.jpg);
+}
+
+.windowFrameRight
+{
+	position: absolute;
+	left: 241px;
+	top: 12px;
+	width: 10px;
+	height: 160px;
+	background-color: #ffffff;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/windowFrameVer.jpg);
+}
+
+.windowFrameBottom
+{
+	position: absolute;
+	width: 180px;
+	height: 10px;
+	left: 71px;
+	top: 172px;
+	background-color: #ffffff;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/windowFrameHor.jpg);
+}
+
+.windowLeft
+{
+	position: absolute;
+	width: 161px;
+	height: 184px;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+
+.windowRight
+{
+	position: absolute;
+	width: 161px;
+	height: 184px;
+	left: 161px;
+	top: 0px;
+	overflow: hidden;
+}
+
+.thumbnailWindow
+{
+	float: left;
+	position: relative;
+	width: 322px;
+	height: 184px;
+	margin-left: 17px;
+	margin-bottom: 40px;
+}
+
+.thumbnailWindowCaption
+{
+	position: absolute;
+	left: 0px;
+	top: -160px;
+	width: 160px;
+	height: 160px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/thumbnailCaptionBack.jpg);
+}
+
+.thumbnailWindowCaption span
+{
+	color: #ffffff;
+	font-size: 17px;
+	font-weight: 700;
+	text-align: left;
+	margin: 24px;
+	float: left;
+	font-family: arial;
+}
+
+.thumbnailWindowCaptionArea
+{
+	position: absolute;
+	left: 81px;
+	top: 12px;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+}
+
+.thumbnailWindowCaption span em
+{
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.thumbnailWindowImage
+{
+	position: absolute;
+	width: 160px;
+	height: 160px;
+	left: 81px;
+	top: 12px;
+	overflow: hidden;
+}
+
+#titleAnimation
+{
+	position:relative;
+	width: 232px;
+	height: 39px;
+	margin-bottom: 40px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/titleAnimation.png);
+}
+
+.windowLeftOpening
+{
+	position: absolute;
+	width: 1127px;
+	height: 184px;
+	top: 0px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/windowLeftOpenSequence.png);
+}
+
+.windowRightOpening
+{
+	position: absolute;
+	width: 1127px;
+	height: 184px;
+	top: 0px;
+	background-image: url(http://www.rleonardi.com/tutorial/design-portfolio/images/windowRightOpenSequence.png);
+}

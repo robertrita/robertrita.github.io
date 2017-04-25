@@ -1,0 +1,135 @@
+.armRight
+{
+	position: absolute;
+	left: 104px;
+	top: 0px;
+	width: 278px;
+	height: 93px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/armRight.png);
+}
+
+.armLeft
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 278px;
+	height: 93px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/armLeft.png);
+}
+
+.gearMask
+{
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	height: 436px;
+	overflow: hidden;
+}
+
+.gear
+{
+	position: absolute;
+	width: 268px;
+	height: 268px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/rotatorFull.png);
+}
+
+.gearImage
+{
+	position: absolute;
+	width: 120px;
+	height: 194px;
+	left:73px;
+	top:0px;
+}
+
+.gearContainer
+{
+	position: absolute;
+	width: 352px;
+	height: 436px;
+	overflow: hidden;
+}
+
+.handAndArmRight
+{
+	position: absolute;
+	width: 382px;
+	height: 130px;
+	
+	transform-origin:98px 65px;
+	-ms-transform-origin:98px 65px; /* IE 9 */
+	-webkit-transform-origin:98px 65px; /* Safari and Chrome */
+	-moz-transform-origin:98px 65px; /* Firefox */
+	-o-transform-origin:98px 65px; /* Opera */
+}
+
+.handAndArmLeft
+{
+	position: absolute;
+	width: 380px;
+	height: 108px;
+	
+	transform-origin:284px 65px;
+	-ms-transform-origin:284px 65px; /* IE 9 */
+	-webkit-transform-origin:284px 65px; /* Safari and Chrome */
+	-moz-transform-origin:284px 65px; /* Firefox */
+	-o-transform-origin:284px 65px; /* Opera */
+}
+
+.handCloseLeft
+{
+	position: absolute;
+	left: 245px;
+	top: 26px;
+	width: 87px;
+	height: 93px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/handCloseLeft.png);
+}
+
+.handCloseRight
+{
+	position: absolute;
+	left: 50px;
+	top: 26px;
+	width: 87px;
+	height: 93px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/handCloseRight.png);
+}
+
+.handOpenLeft
+{
+	position: absolute;
+	left: 243px;
+	top: 18px;
+	width: 139px;
+	height: 112px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/handOpenLeft.png);
+}
+
+.handOpenRight
+{
+	position: absolute;
+	left: 0px;
+	top: 18px;
+	width: 139px;
+	height: 112px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/handOpenRight.png);
+}
+
+.stringGear
+{
+	position: absolute;
+	height: 2px;
+	background-image: url(http://www.rleonardi.com/design-portfolio/images/stringThumbnail.png);
+	background-repeat:repeat-x;
+}
+
+.stringGearMask
+{
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	overflow: hidden;
+}
